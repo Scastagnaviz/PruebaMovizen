@@ -10,16 +10,23 @@
     <title>Apuestas</title>
   </head>
   <body>
+    <div class="card text-white bg-success mb-3" >
     <h1>Bienvenido a sistema de apuesta</h1>
-    <form class="form" onsubmit="jugar()">
-      <label for="number">ingrese su apuesta</label>
-      <input type="number" name="apuesta" />
+    </div>
+    <form  onsubmit="jugar()">
+        <div class="form-group">
+      <label for="apuesta">Ingrese su apuesta</label>
+      <input type="number" name="apuesta" id="apuesta" />
+        <br>
 
-      <label for="apuesta">Ingrese un numero</label>
-      <input type="number" name="number" />
+      <label for="dice">Ingrese un numero</label>
+      <input type="number" name="dice" id="dice" />
+            <br>
 
       <button class="btn btn-success" type="submit">Lanzar dados</button>
+            </div>
     </form>
+    
     <script src="./apuestas.js"></script>
   </body>
 </html>
